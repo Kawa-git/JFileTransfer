@@ -16,9 +16,10 @@ class App{
 
         String response = sc.nextLine().toLowerCase();
 
-        if(response == null){
+        if(response.equals("")){
             response="send";
-        }if(response.equalsIgnoreCase("send")){
+        }
+        if(response.equalsIgnoreCase("send")){
             try {
                 new Server();
             } catch (IOException e) {
